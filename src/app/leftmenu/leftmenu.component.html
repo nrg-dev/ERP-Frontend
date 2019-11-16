@@ -1,0 +1,95 @@
+<body class="hold-transition skin-blue sidebar-mini">
+    <div class="wrapper">
+        <!-- Sidebar  -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <button type="button" id="sidebarCollapse" class="barbutton">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="logo">
+				  <span class="logo-mini"></span>
+				  <span class="logo-lg">Show/Hide Menu</span>
+				</a>
+                
+            </div>
+
+            <ul class="list-unstyled components">
+                <li class="active">
+                    <!-- <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"> -->
+                    <a [routerLink]="['/landingpage']">
+                        <img src="./assets/images/dashboard.png" class="imageContainer" />
+                        DashBoard
+                    </a>
+                 
+                </li>
+                <li>
+                    <a [routerLink]="['employeeadd']">
+                        <img src="./assets/images/employee.png" class="imageContainer" />
+                        Employment
+                    </a>
+                   <!-- <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"> -->
+                    <a [routerLink]="['vendoradd']">
+                        <img src="./assets/images/vendor-customer.png" class="imageContainer" />
+                        Vendor & Customer
+                    </a>
+                 
+                </li>
+                <li> 
+                        <a [routerLink]="['categoryadd']">
+                                <img src="./assets/images/category-product.png" class="imageContainer" />
+                        Category & Product
+                    </a>
+                </li>
+                <li> 
+                        <a [routerLink]="['purchaseadd']">
+                                <img src="./assets/images/circle-cropped.png" class="imageContainer" />
+                        Purchase
+                    </a>
+                </li>
+                <li> 
+                    <a [routerLink]="['salesorder']">
+                        <img src="./assets/images/sales.png" class="imageContainer" />
+                        Sales
+                    </a>
+                </li>
+                <li> 
+                        <a [routerLink]="['pettycashadd']">
+                                <img src="./assets/images/finance.png" class="imageContainer" />
+                        Finance
+                    </a>
+                </li>
+                <li>
+                        <a [routerLink]="['stockadd']">
+                                <img src="./assets/images/stock.png" class="imageContainer" />
+                        Stock
+                    </a>
+                </li>
+                <li>
+                        <a [routerLink]="['allreport']">
+                                <img src="./assets/images/reports.png" class="imageContainer" />
+                        Report
+                    </a>
+                </li>
+                <li>
+                        <a [routerLink]="['usermgtadd']">
+                                <img src="./assets/images/usermgt.png" class="imageContainer" />
+                        User Management
+                    </a>
+                </li>
+                <li>
+                    <a [routerLink]="['/login']">
+                        <img src="./assets/images/logout.png" class="imageContainer" />
+                        Log Out
+                    </a>
+                </li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+            </ul>
+        </nav>
+
+        <!-- Page Content  -->
+        
+    </div>
+</body>
