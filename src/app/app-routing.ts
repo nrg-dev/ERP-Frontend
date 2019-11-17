@@ -40,7 +40,9 @@ const routes: Routes = [
   
   
   // otherwise redirect to login
-  { path: '**', redirectTo: '' }
+  //{ path: '**', redirectTo: '' }
+  { path: '**', redirectTo: 'login' }
+
 ];
 
 @NgModule({

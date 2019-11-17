@@ -10,6 +10,9 @@ import { Router, ActivatedRoute } from '@angular/router';
 export class LoginComponent implements OnInit {
   model: any = {};
   user:User;
+  loading = false;
+  passwordtype="password";
+
   constructor(  private router: Router,) { }
 
   ngOnInit() {
@@ -18,12 +21,30 @@ export class LoginComponent implements OnInit {
   }
 
   onClickSubmit(){
-   // alert("login");
     console.log("user name : password"+this.model.currentusername+this.model.currentpassword);
-    //if(this.user.status=="success") {                    
       localStorage.setItem('currentusername',this.model.currentusername);
+      localStorage.setItem('currentpassword',this.model.currentpassword);
       this.router.navigate(['/landingpage']);
-  //} 
+  }
 
+  forgetPassword(){
+
+  }
+
+  showPassword(){
+    if (this.passwordtype=="text"){
+      this.passwordtype="password";
+
+    }
+    if (this.passwordtype=="password"){
+      this.passwordtype="text";
+
+    }
+   // var x = document.getElementById("myInput");
+  //if (x.type === "password") {
+  //  x.type = "text";
+  //} else {
+  //  x.type = "password";
+  //}
   }
 }

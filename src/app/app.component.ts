@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { MemoryRouter } from 'react-router'
 
 @Component({
   selector: 'app-root',

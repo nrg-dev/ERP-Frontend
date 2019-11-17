@@ -1,6 +1,6 @@
 ﻿import { Common } from "./common";
 
-export class User extends Common{
+export class User extends Common {
 
    id: string; 
    currentusername: string;
