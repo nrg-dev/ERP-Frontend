@@ -4,9 +4,12 @@ import { EmployeeaddComponent } from './employeeadd/employeeadd.component';
 import { EmployeelistComponent } from './employeelist/employeelist.component';
 import { EmployeereportComponent } from './employeereport/employeereport.component';
 import { Routes, RouterModule } from '@angular/router';
+import { EmployeeindexComponent } from './employeeindex/employeeindex.component';
+import { MatTabsModule } from '@angular/material';
 
 
 const routes: Routes = [
+  { path: 'employeeindex', component: EmployeeindexComponent },
   { path: 'employeeadd', component: EmployeeaddComponent },
   { path: 'employeelist', component: EmployeelistComponent },
   { path: 'employeereport', component: EmployeereportComponent }
@@ -14,9 +17,9 @@ const routes: Routes = [
 
 
 @NgModule({
-  declarations: [EmployeeaddComponent, EmployeelistComponent, EmployeereportComponent],
+  declarations: [EmployeeaddComponent, EmployeelistComponent, EmployeereportComponent, EmployeeindexComponent],
   imports: [
-    CommonModule,RouterModule.forChild(routes) 
+    CommonModule,MatTabsModule,RouterModule.forChild(routes) 
   ]
 })
 export class EmployeeModule { }

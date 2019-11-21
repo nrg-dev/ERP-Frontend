@@ -1,0 +1,18 @@
+<br/><br/>
+
+<div class="col-lg-3"></div>
+<div class="col-lg-9" >
+
+
+    <ng-container *ngIf="(asyncTabs | async) === null">
+        Loading tabs...
+      </ng-container>
+      
+      <mat-tab-group>
+        <mat-tab *ngFor="let tab of asyncTabs | async">
+          <ng-template mat-tab-label>{{tab.label}}</ng-template>
+          {{tab.content}}
+        </mat-tab>
+      </mat-tab-group>
+
+    </div>
