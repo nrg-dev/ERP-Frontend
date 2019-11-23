@@ -1,109 +1,68 @@
-<!--
+<!--<mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark indigo" mdbStickyHeader>
+  <mdb-navbar-brand><a class="navbar-brand" href="#">Navbar</a></mdb-navbar-brand>
+</mdb-navbar>
+
+<div style="height: 300vh"> </div>
+
+<mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark indigo" mdbStickyHeader>
+  <mdb-navbar-brand><a class="navbar-brand" href="#">Navbar</a></mdb-navbar-brand>
+
+  <div class="fixed-nav-bar">
+    <nav class="navbar navbar-inverse">
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <img src="./assets/images/nrg_logo.png"  class="logo-img" />
+      </div>
+    </nav>
+  </div>
+      
+  
+</mdb-navbar>
+
+-->
+
+ 
+
 <div id="fixed-heder">
   <div class="fixed-nav-bar">
       <nav class="navbar navbar-inverse" id="back-colorforheader">
         <div class="collapse navbar-collapse" id="myNavbar">
-          
+          <div class="col-lg12">
+
+            <div class="col-lg-3" id="search">
+                <input type="text" placeholder="&#xf002;   search here" class="searchicon"/>
+            </div>
+
+            <div class="col-lg-6">
+                <img src="./assets/images/nrg_logo.png"  class="logo-img" />
+            </div>
+
+            <div class="col-lg-3">
+              <div class="row">
+                <div class="col-lg-2">
+                   <div id="user-img"> 
+                      <img src="./assets/images/user.png">
+                   </div>
+                </div>
+                <div class="col-lg-5">
+                    <label id="welcome-text">Welcome </label>
+                    <label id="name-text">Hendri </label>
+                    <label id="welcome-text">General manager</label>
+                </div>
+                <div class="col-lg-5">
+                  <div class="row">
+                      <div id="user-img1">
+                        <i class="fa fa-cog" aria-hidden="true" id="icon-color"></i>
+                      </div>
+                      <div id="user-img2">
+                        <i class="fa fa-power-off" aria-hidden="true" id="icon-color"></i>
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+        </div>
         </div>
       </nav>
     </div>
-  </div> -->
-
-
-
-  <div id="fixed-heder">
-    <div class="fixed-nav-bar" id="header-top">
-            
-        <nav class="navbar navbar-inverse" id="back-colorforheader">
-          
-            <div class="col-md-12 col-12 col-lg-12">
-              <div class="row">
-                <div class="col-md-1 col-1 col-lg-1">
-                  <div class="sidebar-header">
-                      <button type="button" id="sidebarCollapse" class="barbutton">
-                          <i class="fa fa-bars"></i>
-                      </button>
-                      <a class="logo">
-                        <span class="logo-mini"></span>
-                      </a>    
-                    </div>
-                </div>
-
-              <div class="col-md-3 col-3 col-lg-3" id="search">
-                  <input type="text" placeholder="&#xf002;   search here" class="searchicon"/>
-              </div>
-
-                <div class="col-md-3 col-4 col-lg-3" >
-                  <img src="./assets/images/nrg_logo.png"  id="logo-img"/>
-                  </div>
-
-              <div class="col-md-3 col-3 col-lg-4" >
-                  <div class="dropdown">
-                      <!-- three dots -->
-                      <ul class="dropbtn icons btn-right showLeft" (click)="showDropdown()">
-                          <li></li>
-                          <li></li>
-                          <li></li>
-                      </ul>
-                      <!-- menu -->
-                      <div id="myDropdown" class="dropdown-content">
-                          <div class="row">
-                              <div class="col-2 col-lg-2">
-                                 <div id="user-img"> 
-                                    <img src="./assets/images/user.png">
-                                 </div>
-                              </div>
-                              <div class="col-5 col-lg-4">
-                                  <label id="welcome-text">Welcome </label>
-                                  <br/>
-                                  <label id="name-text">Hendri </label>
-                                  <label id="welcome-text">General manager</label>
-                              </div>
-                              <div class="col-5 col-lg-6">
-                                <div class="row">
-                                    <div id="user-img1">
-                                      <i class="fa fa-cog" aria-hidden="true" id="icon-color"></i>
-                                    </div>
-                                    <div id="user-img2">
-                                      <i class="fa fa-power-off" aria-hidden="true" id="icon-color"></i>
-                                    </div>
-                                </div>
-                              </div>
-                            </div>
-                      </div>
-                  </div>
-
-                     <div class="row" id="mobileview-none">
-                      <div class="col-2 col-lg-2">
-                         <div id="user-img"> 
-                            <img src="./assets/images/user.png">
-                         </div>
-                      </div>
-                      <div class="col-5 col-lg-4">
-                          <label id="welcome-text">Welcome </label>
-                          <br/>
-                          <label id="name-text">Hendri </label>
-                          <label id="welcome-text">General manager</label>
-                      </div>
-                      <div class="col-5 col-lg-6">
-                        <div class="row">
-                            <div id="user-img1">
-                              <i class="fa fa-cog" aria-hidden="true" id="icon-color"></i>
-                            </div>
-                            <div id="user-img2">
-                              <i class="fa fa-power-off" aria-hidden="true" id="icon-color"></i>
-                            </div>
-                        </div>
-                      </div>
-                    </div>  
-
-
-
-                  </div> 
-
-                </div>
-            </div>
-         
-        </nav>
-    </div>
-    </div>
+  </div>
