@@ -1,4 +1,13 @@
-.example-action-button {
-    margin-top: 8px;
-    margin-right: 8px;
-  }
+.mat-tab-group {
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    
+
+}
+
+.mat-tab-label {
+    cursor: pointer;
+}
+
+ 

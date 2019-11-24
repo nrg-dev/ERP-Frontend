@@ -19,6 +19,7 @@ import { StockModule } from './stock/stock.module';
 import { UsermgtModule } from './usermgt/usermgt.module';
 import { ReportModule } from './report/report.module';
 //import {MatTabsModule} from '@angular/material/tabs';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 @NgModule({
@@ -33,6 +34,7 @@ import { ReportModule } from './report/report.module';
   imports: [
     MDBBootstrapModule.forRoot(),
     BrowserModule,
+    BrowserAnimationsModule,
     AppRoutingModule,
     FormsModule,
     EmployeeModule,

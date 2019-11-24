@@ -12,4 +12,5 @@ export class VendoraddComponent implements OnInit {
   ngOnInit() {
   }
 
+  
 }
