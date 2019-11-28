@@ -1,1 +1,86 @@
-<p> Vendor add </p>
+<div>
+        <div class="col-lg-2"></div>
+        <div class="col-lg-3">
+            <div class="tab">
+                <a class="tablink" style="border-bottom: 2px solid #1664A7;color:#1664A7"  >Vendor</a>
+                <a class="tablink" style="color:#1664A7" routerLink="../customeradd" id="defaultOpen">Customer</a>
+            </div>
+            
+            <div id="purchase-div">
+                <!--
+                <br/><br/><br/><br/><br/><br/>
+                <div class="row">
+                    <div class="col-lg-3">
+                        <h2 id="vendor-text">Vendor List</h2>
+                    </div>
+                    <div class="col-lg-4"></div>
+                    <div class="col-lg-2">
+                        <button id="print-butn">
+                            <i class="fa fa-print" aria-hidden="true" id="icon-mod"></i>
+                            <label id="text">Print Page</label>
+                        </button>
+                    </div>
+                    <div class="col-lg-3">
+                        <input type="text" placeholder="&#xf002;   search here" class="searchicon"/>
+                    </div>
+                </div> -->
+
+                    <br/><br/><br/><br/>
+                                
+                           <div style="overflow-y: scroll;height: 420px;">
+                        
+                            <div *ngFor="let list of vendorList"  (click)="vendorDetails(list.vendorcode)" id="{{ list.vendorcode }}">
+                                 <h2 style="color: black;text-align: left;width: 59px; margin: 3px;">Alex</h2>
+                                 <div class="row" style="margin-left: 5px;">
+                                     <p style="color: black;text-align: center;">Name</p>
+                                     <p style="color: black;">:</p>
+                                <p style="color: black;text-align: center;">{{ list.name }}</p>
+
+                            </div>
+                            <div class="row" style="margin-left: 5px;margin-top: -15px;">
+                                    <p style="color: black;text-align: center;">Address</p>
+                                    <p style="color: black;">:</p>
+                               <p style="color: black;text-align: center;">{{ list.vendorcode }}</p>
+                               
+                           </div>
+                                <hr style="margin: 0px;">
+                            </div>
+                        </div>
+            </div>
+        
+            <router-outlet>   </router-outlet>
+                        
+        </div>
+        <div class="col-lg-7">
+            <div>
+                <div class="hr">
+                    <div *ngIf="vendordetails" class="empdet-div">
+                        <br/>
+                        <h3 style="margin: 10px;">{{ this.model.name }}</h3>
+                        <hr>
+                            <div class="row" id="country">
+                                <div class="col-md-5 col-xs-5 col-lg-5">Vendor Code</div>
+                                <div class="col-md-1 col-xs-1 col-lg-1">:</div>
+                                <div class="col-md-6 col-xs-6 col-lg-5">{{ this.model.vendorcode }}</div>
+                            </div><br/>
+                            <div class="row" id="country">
+                                <div class="col-md-5 col-xs-5 col-lg-5">Vendor Name</div>
+                                <div class="col-md-1 col-xs-1 col-lg-1">:</div>
+                                <div class="col-md-6 col-xs-6 col-lg-5">{{ this.model.name }}</div>
+                            </div><br/>
+                            <div class="row" id="country">
+                                <div class="col-md-5 col-xs-5 col-lg-5">Contact Number</div>
+                                <div class="col-md-1 col-xs-1 col-lg-1">:</div>
+                                <div class="col-md-6 col-xs-6 col-lg-5">{{ this.model.contactNumber }}</div>
+                            </div><br/>	
+                            <div class="row" id="country">
+                                    <div class="col-md-5 col-xs-5 col-lg-5">Country</div>
+                                    <div class="col-md-1 col-xs-1 col-lg-1">:</div>
+                                    <div class="col-md-6 col-xs-6 col-lg-5">{{ this.model.country }}</div>
+                                </div><br/>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+    

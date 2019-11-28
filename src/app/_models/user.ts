@@ -3,7 +3,8 @@
 export class User extends Common {
 
    id: string; 
-   currentusername: string;
-   currentpassword: string;
-
+   name: string;
+   empCode: string;
+   rank: string;
+   contactNumber: string;
 }

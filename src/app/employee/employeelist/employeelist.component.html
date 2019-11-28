@@ -1,1 +1,83 @@
-<p>employeelist works!</p>
+<div style="background: purple;">
+    <div class="col-lg-2"></div>
+    <div class="col-lg-7">
+        <div class="tab">
+            <a class="tablink" routerLink="../employeeadd" >Employee Add</a>
+            <a class="tablink" style="border-bottom: 3px solid #007bff;" id="defaultOpen">Employee List</a>
+            <a class="tablink" routerLink="../employeeadd" id="defaultOpen">Contract Employee</a>
+            <a class="tablink" routerLink="../employeelist" id="defaultOpen">Employee Report</a>
+        </div>
+        
+        <div id="purchase-div">
+            <br/><br/><br/><br/><br/><br/>
+            <div class="row">
+                <div class="col-lg-3">
+                    <h2 id="vendor-text">Employee List</h2>
+                </div>
+                <div class="col-lg-4"></div>
+                <div class="col-lg-2">
+                    <button id="print-butn">
+                        <i class="fa fa-print" aria-hidden="true" id="icon-mod"></i>
+                        <label id="text">Print Page</label>
+                    </button>
+                </div>
+                <div class="col-lg-3">
+                    <input type="text" placeholder="&#xf002;   search here" class="searchicon"/>
+                </div>
+            </div>
+            <div class="row">              
+                <br/>
+                <table id="table-size">
+                    <thead>
+                        <tr id="tr-color">
+                            <td id="text-color">Employee Code</td>
+                            <td id="text-color">Name</td>
+                            <td id="text-color">Rank</td>
+                            <td id="text-color">Contact Number</td>
+                        </tr>
+                    </thead>
+                    
+                    <tbody>
+                        <tr *ngFor="let list of employeeList" id="cursor-pointer" (click)="employeeDetails(list.empCode)" id="{{ list.empCode }}">
+                            <td>{{ list.empCode }}</td>
+                            <td>{{ list.name }}</td>
+                            <td>{{ list.rank }}</td>
+                            <td>{{ list.contactNumber }}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    
+        <router-outlet>   </router-outlet>
+                    
+    </div>
+    <div class="col-lg-3">
+        <div class="details-div">
+            <div class="hr">
+                <div *ngIf="empdetails" class="empdet-div">
+                        <div class="row" id="country">
+                            <div class="col-md-5 col-xs-5 col-lg-5">Employee Code</div>
+                            <div class="col-md-1 col-xs-1 col-lg-1">:</div>
+                            <div class="col-md-6 col-xs-6 col-lg-5">{{ this.model.empCode }}</div>
+                        </div><br/>
+                        <div class="row" id="country">
+                            <div class="col-md-5 col-xs-5 col-lg-5">Employee Name</div>
+                            <div class="col-md-1 col-xs-1 col-lg-1">:</div>
+                            <div class="col-md-6 col-xs-6 col-lg-5">{{ this.model.name }}</div>
+                        </div><br/>
+                        <div class="row" id="country">
+                            <div class="col-md-5 col-xs-5 col-lg-5">Rank</div>
+                            <div class="col-md-1 col-xs-1 col-lg-1">:</div>
+                            <div class="col-md-6 col-xs-6 col-lg-5">{{ this.model.rank }}</div>
+                        </div><br/>
+                        <div class="row" id="country">
+                            <div class="col-md-5 col-xs-5 col-lg-5">Contact Number</div>
+                            <div class="col-md-1 col-xs-1 col-lg-1">:</div>
+                            <div class="col-md-6 col-xs-6 col-lg-5">{{ this.model.contactNumber }}</div>
+                        </div><br/>	
+                    </div>
+                </div>
+            </div>
+    </div>
+</div>

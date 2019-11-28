@@ -1,22 +1,12 @@
 <div class="col-lg-3"></div>
 <div class="col-lg-9" >
-        <br/>    
+        <br/>      
         <div class="tab">
-        <button class="tablinks" (click)="openCity('checked1')" id="defaultOpen">Vendor</button>
-        <button class="tablinks" (click)="openCity('checked2')">Customer</button>
+          <a class="tablink" routerLink="../vendoradd" >Vendor</a>
+          <a class="tablink" routerLink="../customeradd" id="defaultOpen">Customer</a>
         </div>
-  
-
-        <div *ngIf="checked1" id="checked1" class="tabcontent">
-                       <app-vendoradd> </app-vendoradd>
-        </div>
-                      
-        <div *ngIf="checked2" id="checked2" class="tabcontent">
-                        <app-customeradd> </app-customeradd>
-
-        </div>
-                      
-       
-
-                      
+        <router-outlet>        
+        </router-outlet>
+              
 </div>
+
