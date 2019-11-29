@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 //import { LandingpageComponent } from 'src/app/landingpage/landingpage.component';
 import { Subject } from 'rxjs';
 import { LandingpageComponent } from '../../landingpage/landingpage.component';
+import { User } from 'src/app/_models';
+
 
 @Component({
   selector: 'app-employeeadd',
@@ -11,6 +13,8 @@ import { LandingpageComponent } from '../../landingpage/landingpage.component';
 export class EmployeeaddComponent implements OnInit {
   public static showParent: Subject<any> = new Subject();
   //notSelected: boolean;
+  user:User;
+  model: any = {};
 
   constructor() {
    // alert("test");
@@ -28,5 +32,7 @@ export class EmployeeaddComponent implements OnInit {
   //localStorage.setItem("notSelected","false");
 
   }
+
+  
 
 }

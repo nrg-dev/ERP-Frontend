@@ -1,75 +1,126 @@
 <div>
         <div class="col-lg-2"></div>
-        <div class="col-lg-7">
+        <div class="col-lg-4">
             <div class="tab">
-                <a class="tablink" routerLink="../vendoradd" >Vendor</a>
-                <a class="tablink" style="border-bottom: 3px solid #007bff;" id="defaultOpen">Customer</a>
+                <div class="col-lg-4">
+                        <a class="tablink" style="color:black" routerLink="../vendoradd"><h2>Vendor</h2></a>
+                </div>
+                <div class="col-lg-4">
+                    <a class="tablink" id="cutomer-style" ><h2>Customer</h2></a>
+                </div>
+                <div class="col-lg-4">
+                        
+                </div>
             </div>
-            
+                    
             <div id="purchase-div">
-                <br/><br/><br/><br/><br/><br/>
+                        <!--
+                        <br/><br/><br/><br/><br/><br/>
+                        <div class="row">
+                            <div class="col-lg-3">
+                                <h2 id="vendor-text">Vendor List</h2>
+                            </div>
+                            <div class="col-lg-4"></div>
+                            <div class="col-lg-2">
+                                <button id="print-butn">
+                                    <i class="fa fa-print" aria-hidden="true" id="icon-mod"></i>
+                                    <label id="text">Print Page</label>
+                                </button>
+                            </div>
+                            <div class="col-lg-3">
+                                <input type="text" placeholder="&#xf002;   search here" class="searchicon"/>
+                            </div>
+                        </div> -->
+        
+            <br/><br/><br/>
+                                        
+            <div id="hole-div">
+                    <hr style="margin: 0px;">
+                        <div *ngFor="let list of vendorList"  (click)="vendorDetails(list.vendorcode)" id="{{ list.vendorcode }}">          
+                            <h3 id="name-text">{{ list.name }}</h3>
+                            <div class="row" id="details-text">
+                                    <p id="country-text">country</p>
+                                    <p id="text2">:</p>
+                                    <p id="text1">{{ list.country }}</p>
+                            </div>
+                            <div class="row" id="addr-text">
+                                    <p id="country-text">Address</p>
+                                    <p id="text2">:</p>
+                                    <p id="text1">{{ list.address }}</p>
+                            </div>
+                             <hr style="margin: 0px;">
+                         </div>
+                </div>
+            </div>
+                
+        <router-outlet>   </router-outlet>
+                                
+        </div>
+            <div class="col-lg-6">
+                <div>
+                <div class="hr">
+                <div *ngIf="vendordetails" class="empdet-div">
+                <br/>
+                                
+        
                 <div class="row">
-                    <div class="col-lg-3">
-                        <h2 id="vendor-text">Customer List</h2>
-                    </div>
-                    <div class="col-lg-4"></div>
-                    <div class="col-lg-2">
+                    <div class="col-lg-1"></div>
+                    <div class="col-lg-4">
+                        <h4>Customer Details View</h4>
+                        </div>
+                        <div class="col-lg-2"></div>
+                        <div  class="col-lg-2">
+                        <div id="edit-butn1">
+                            <p>Edit</p>
+                        </div>
+                        </div>
+                        <div  class="col-lg-3">
                         <button id="print-butn">
                             <i class="fa fa-print" aria-hidden="true" id="icon-mod"></i>
                             <label id="text">Print Page</label>
                         </button>
+                        </div>
                     </div>
-                    <div class="col-lg-3">
-                        <input type="text" placeholder="&#xf002;   search here" class="searchicon"/>
+                    <hr>
+                    <br/><br/>
+                <div>
+                    <div class="col-lg-5">
+                        <div id="img-detaildiv">
+                            <img src="./assets/images/employee.png"  style="width: 130;margin-left: 50px;"/>
+                        </div>
                     </div>
-                </div>
-                <div class="row">              
-                    <br/>
-                    <table id="table-size">
-                        <thead>
-                            <tr id="tr-color">
-                                <td id="text-color">Vendor Code</td>
-                                <td id="text-color">Name</td>
-                                <td id="text-color">Contact Number</td>
-                            </tr>
-                        </thead>
-                        
-                        <tbody>
-                            <tr *ngFor="let list of vendorList" id="cursor-pointer" (click)="vendorDetails(list.vendorcode)" id="{{ list.vendorcode }}">
-                                <td>{{ list.vendorcode }}</td>
-                                <td>{{ list.name }}</td>
-                                <td>{{ list.contactnumber }}</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
+                    <div class="col-lg-7">
+                        <div class="row" id="country">
+                            <p  id="text3">Vendor Code</p>
+                            <p >:</p>
+                            <p >{{ this.model.vendorcode }}</p>
+                        </div>
+                        <div class="row" id="country">
+                            <p  id="text3">Vendor Name</p>
+                            <p >:</p>
+                            <p  id="text3">{{ this.model.name }}</p>
+                        </div>
+                        <div class="row" id="country">
+                            <p  id="text3">Contact Number</p>
+                            <p >:</p>
+                            <p  id="text3">{{ this.model.contactNumber }}</p>
+                        </div>
+                        <div class="row" id="country">
+                                <p  id="text3">Country</p>
+                                <p >:</p>
+                                <p  id="text3">{{ this.model.country }}</p>
+                        </div>
+                        <div class="row" id="country">
+                                <p  id="text3">Email</p>
+                                <p >:</p>
+                                <p  id="text3">{{ this.model.email }}</p>
+                        </div>
+                    </div>
+                  </div>
         
-            <router-outlet>   </router-outlet>
-                        
-        </div>
-        <div class="col-lg-3">
-            <div class="details-div">
-                <div class="hr">
-                    <div *ngIf="vendordetails" class="empdet-div">
-                            <div class="row" id="country">
-                                <div class="col-md-5 col-xs-5 col-lg-5">Vendor Code</div>
-                                <div class="col-md-1 col-xs-1 col-lg-1">:</div>
-                                <div class="col-md-6 col-xs-6 col-lg-5">{{ this.model.vendorcode }}</div>
-                            </div><br/>
-                            <div class="row" id="country">
-                                <div class="col-md-5 col-xs-5 col-lg-5">Vendor Name</div>
-                                <div class="col-md-1 col-xs-1 col-lg-1">:</div>
-                                <div class="col-md-6 col-xs-6 col-lg-5">{{ this.model.name }}</div>
-                            </div><br/>
-                            <div class="row" id="country">
-                                <div class="col-md-5 col-xs-5 col-lg-5">Contact Number</div>
-                                <div class="col-md-1 col-xs-1 col-lg-1">:</div>
-                                <div class="col-md-6 col-xs-6 col-lg-5">{{ this.model.contactNumber }}</div>
-                            </div><br/>	
                         </div>
                     </div>
                 </div>
+            </div>
         </div>
-    </div>
-    
+            

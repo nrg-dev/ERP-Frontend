@@ -12,31 +12,47 @@ export class VendoraddComponent implements OnInit {
   model:any ={};
 
   vendorList : any = [ {
-    vendorcode:'No 2, North Street,jakarta,Indonesia',
+    vendorcode:'01',
     name :'Alex Ubalton',
     contactNumber : '1233',
-    country :  'India'
+    address : 'No 2, North Street,jakarta,Indonesia',
+    country :  'India',
+    email : 'alex@gmail.com'
   },
-  {vendorcode:' No 2, North Street,jakarta,India',
-  name :'Nisholine',
+  {vendorcode:'02',
+  name :'Nisholin',
   contactNumber : '121222',
-  country :  'India'
+  address : 'No 2, North Street,jakarta,India',
+  country :  'china',
+  email : 'nisho@gmail.com'
 },
- {vendorcode:' No 2, North Street,jakarta,Indonesia',
+ {vendorcode:'03',
   name :'josini',
   contactNumber : '1233',
+  address : 'No 2, North Street,jakarta,Indonesia',
+  country :  'dubai',
+  email : 'josini@gmail.com'
 },
   {vendorcode:'04',
     name :'nisho',
-    contactNumber : '121222'
+    contactNumber : '121222',
+    address : 'No 2, North Street,jakarta,Indonesia',
+    country :  'uk',
+    email : 'Nisholin@gmail.com'
 },
 {vendorcode:'05',
-    name :'nisho',
-    contactNumber : '121222'
+    name :'hendry',
+    contactNumber : '121222',
+    address : 'No 2, North Street,jakarta,Indonesia',
+    country :  'us',
+    email : 'hendry@gmail.com'
 },
 {vendorcode:'06',
-    name :'nisho',
-    contactNumber : '121222'
+    name :'robert',
+    contactNumber : '121222',
+    address : 'No 2, North Street,jakarta,Indonesia',
+    country :  'malysia',
+    email : 'robert@gmail.com'
 },
 
 ];
@@ -57,19 +73,25 @@ export class VendoraddComponent implements OnInit {
 
     this.vendordetails = true;
     if(vendorcode == "01"){
-      this.model.vendorcode = "No 2, Est street , Jakarta , India";
+      this.model.vendorcode = "01";
       this.model.name = "alex";
       this.model.contactNumber = "112233";
+      this.model.address = 'No 2, North Street,jakarta,Indonesia';
       this.model.country = "India";
+      this.model.email = "alex@gmail.com";
     }else if(vendorcode == "02"){
       this.model.vendorcode = "02";
       this.model.name = "nisho";
+      this.model.address = 'No 2, North Street,jakarta,India';
       this.model.contactNumber = "123123";
+      this.model.email = "nisho@gmail.com";
     }
     else if(vendorcode == "03"){
-      this.model.vendorcode = "emp03";
+      this.model.vendorcode = "03";
       this.model.name = "josni";
+      this.model.address = 'No 2, North Street,jakarta,Indonesia';
       this.model.contactNumber = "223344";
+      this.model.email = "josini@gmail.com";
     }
   }
   

@@ -6,6 +6,7 @@ import { EmployeereportComponent } from './employeereport/employeereport.compone
 import { Routes, RouterModule } from '@angular/router';
 import { EmployeeindexComponent } from './employeeindex/employeeindex.component';
 import { MatTabsModule } from '@angular/material';
+import { FormsModule } from '@angular/forms';
 
 
 const routes: Routes = [
@@ -19,6 +20,7 @@ const routes: Routes = [
 @NgModule({
   declarations: [EmployeeaddComponent, EmployeelistComponent, EmployeereportComponent, EmployeeindexComponent],
   imports: [
+    FormsModule,
     CommonModule,MatTabsModule,RouterModule.forChild(routes) 
   ]
 })

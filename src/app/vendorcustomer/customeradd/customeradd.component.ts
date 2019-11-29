@@ -11,62 +11,55 @@ export class CustomeraddComponent implements OnInit {
 
   vendorList : any = [ {
     vendorcode:'01',
-    name :'alex',
-    contactNumber : '1233'
+    name :' Ubalton',
+    contactNumber : '1233',
+    address : 'No 2, North Street,jakarta,Indonesia',
+    country :  'India',
+    email : 'alex@gmail.com'
   },
   {vendorcode:'02',
-  name :'nisho',
-  contactNumber : '121222'
+  name :'Nisho',
+  contactNumber : '121222',
+  address : 'No 2, North Street,jakarta,India',
+  country :  'china',
+  email : 'nisho@gmail.com'
 },
  {vendorcode:'03',
   name :'josini',
   contactNumber : '1233',
+  address : 'No 2, North Street,jakarta,Indonesia',
+  country :  'dubai',
+  email : 'josini@gmail.com'
 },
   {vendorcode:'04',
     name :'nisho',
-    contactNumber : '121222'
+    contactNumber : '121222',
+    address : 'No 2, North Street,jakarta,Indonesia',
+    country :  'uk',
+    email : 'Nisholin@gmail.com'
 },
-  {vendorcode:'05',
-    name :'nisho',
-    contactNumber : '121222'
+{vendorcode:'05',
+    name :'hendry',
+    contactNumber : '121222',
+    address : 'No 2, North Street,jakarta,Indonesia',
+    country :  'us',
+    email : 'hendry@gmail.com'
 },
-  {vendorcode:'06',
-    name :'nisho',
-    contactNumber : '121222'
-  },
-  {vendorcode:'07',
-  name :'nisho',
-  contactNumber : '121222'
-},
-{vendorcode:'08',
-name :'nisho',
-contactNumber : '121222'
-},
-{vendorcode:'09',
-name :'nisho',
-contactNumber : '121222'
-},
-{vendorcode:'10',
-name :'nisho',
-contactNumber : '121222'
-},
-{vendorcode:'11',
-name :'nisho',
-contactNumber : '121222'
-},
-{vendorcode:'12',
-name :'nisho',
-contactNumber : '121222'
+{vendorcode:'06',
+    name :'robert',
+    contactNumber : '121222',
+    address : 'No 2, North Street,jakarta,Indonesia',
+    country :  'malysia',
+    email : 'robert@gmail.com'
 },
 
 ];
-
 
   constructor() { }
 
   ngOnInit() {
     }
-     tempid=null;
+    tempid=null;
     vendorDetails(vendorcode:string){
       if(this.tempid!==null){
         document.getElementById(this.tempid).style.backgroundColor='white';
@@ -74,21 +67,29 @@ contactNumber : '121222'
   
       }
       this.tempid=vendorcode;
-      document.getElementById(this.tempid).style.backgroundColor='#ccc';
+      document.getElementById(this.tempid).style.backgroundColor='#DDEDF9';
+  
       this.vendordetails = true;
       if(vendorcode == "01"){
         this.model.vendorcode = "01";
-        this.model.name = "alex";
+        this.model.name = "ubalton";
         this.model.contactNumber = "112233";
+        this.model.address = 'No 2, North Street,jakarta,Indonesia';
+        this.model.country = "India";
+        this.model.email = "alex@gmail.com";
       }else if(vendorcode == "02"){
         this.model.vendorcode = "02";
-        this.model.name = "nisho";
+        this.model.name = "nisholin";
+        this.model.address = 'No 2, North Street,jakarta,India';
         this.model.contactNumber = "123123";
+        this.model.email = "nisho@gmail.com";
       }
       else if(vendorcode == "03"){
         this.model.vendorcode = "03";
         this.model.name = "josni";
+        this.model.address = 'No 2, North Street,jakarta,Indonesia';
         this.model.contactNumber = "223344";
+        this.model.email = "josini@gmail.com";
       }
     }
     
