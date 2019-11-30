@@ -1,8 +1,7 @@
 #vendor-style{
-  border-bottom: 2px solid #1664A7;
-  color:#1664A7;
+  border-bottom: 2px solid #007bff;
+  color: #1664a7;
   font-weight: bold;
-  width: 120px;
 }
 
 .mat-tab-group {
