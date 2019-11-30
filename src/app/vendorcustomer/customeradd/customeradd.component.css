@@ -244,3 +244,6 @@ height: 130px;
 #text3{
   font-size: 16px;
 }
+#curs-pointer{
+  cursor: pointer;
+}
