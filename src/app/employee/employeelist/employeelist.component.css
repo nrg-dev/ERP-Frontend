@@ -185,6 +185,7 @@ h3{
 #empButton{
     width: 65px;
     font-size: 12px;
+    padding-left: 4px;
 }
 
 .form-control{
