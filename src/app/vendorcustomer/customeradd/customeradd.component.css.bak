@@ -1,8 +1,8 @@
-#vendor-style{
+#cutomer-style{
   border-bottom: 2px solid #1664A7;
   color:#1664A7;
   font-weight: bold;
-  width: 120px;
+  width: 155px;
 }
 
 .mat-tab-group {

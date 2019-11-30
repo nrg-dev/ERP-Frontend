@@ -14,76 +14,76 @@ export class EmployeelistComponent implements OnInit {
 
   employeeList : any = [ 
     {
-      empCode:'emp01',
-      name :'alex',
-      rank: 'Owner',
-      contactNumber : '112233'
+      empCode:'NRG1',
+      name :'Alex Ubalton',
+      rank: 'CTO',
+      contactNumber : '+91 6385662312'
     },
     {
-      empCode:'emp02',
-      name :'nisho',
+      empCode:'NRG2',
+      name :'Magin',
       rank: 'CEO',
-      contactNumber : '123123'
+      contactNumber : '+61 87654321'
     },
     {
-      empCode:'emp03',
-      name :'josni',
-      rank: 'Director',
-      contactNumber : '223344',
+      empCode:'NRG3',
+      name :'Hendry',
+      rank: 'Manager',
+      contactNumber : '+61 43232134',
     },
     {
-      empCode:'emp04',
-      name :'employee 1',
-      rank: 'Managing Director',
-      contactNumber : '121212'
+      empCode:'NRG4',
+      name :'Rema',
+      rank: 'Executive',
+      contactNumber : '+61 43232134'
     },
     {
-      empCode:'emp05',
-      name :'employee 2',
+      empCode:'NRG5',
+      name :'Mahesh Kumar',
       rank: 'Branch Manager',
-      contactNumber : '321321'
+      contactNumber : '+61 43232134'
     },
     {
-      empCode:'emp06',
-      name :'employee 3',
-      rank: 'CEO',
-      contactNumber : '159951'
+      empCode:'NRG6',
+      name :'Muth Raj',
+      rank: 'Sales Officer',
+      contactNumber : '+61 43232134'
     },
     {
-      empCode:'emp07',
-      name :'employee 4',
-      rank: 'Owner',
-      contactNumber : '112233'
+      empCode:'NRG7',
+      name :'Preethi Thanga',
+      rank: 'Human Resource',
+      contactNumber : '+61 43232134'
     },
     {
-      empCode:'emp08',
-      name :'employee 5',
-      rank: 'CEO',
-      contactNumber : '123123'
+      empCode:'NRG8',
+      name :'Danial',
+      rank: 'Engineer',
+      contactNumber : '+61 43232134'
     },
     {
-      empCode:'emp09',
-      name :'employee 6',
-      rank: 'Director',
-      contactNumber : '223344',
+      empCode:'NRG9',
+      name :'Pease RJ',
+      rank: 'Officer',
+      contactNumber : '+61 43232134',
     },
     {
-      empCode:'emp10',
-      name :'employee 7',
-      rank: 'Managing Director',
-      contactNumber : '121212'
+      empCode:'NRG10',
+      name :'Ram Pretheep',
+      rank: 'Project Manager',
+      contactNumber : '+60 43232134'
     },
     {
-      empCode:'emp11',
+      empCode:'NRG11',
       name :'employee 8',
       rank: 'Branch Manager',
-      contactNumber : '321321'
+      contactNumber : '+63 43232134'
     },
     {
-      empCode:'emp12',
-      name :'employee 9',
-      rank: 'CEO',
-      contactNumber : '159951'
+      empCode:'NRG12',
+      name :'Jackson Due',
+      rank: 'Senior Manager',
+      contactNumber : '+62 43232134'
     },
   ];
 
@@ -105,39 +105,78 @@ export class EmployeelistComponent implements OnInit {
     this.empdetails = true;
     this.empeditdetails = false;
 
-    if(empCode == "emp01"){
-      this.model.empCode = "emp01";
-      this.model.name = "alex";
-      this.model.rank = "Owner";
-      this.model.contactNumber = "112233";
-    }else if(empCode == "emp02"){
-      this.model.empCode = "emp02";
-      this.model.name = "nisho";
-      this.model.rank = "CEO";
-      this.model.contactNumber = "123123";
+    if(empCode == "NRG1"){
+      this.model.empCode = this.employeeList[0].empCode;
+      this.model.name = this.employeeList[0].name;
+      this.model.rank = this.employeeList[0].rank;
+      this.model.contactNumber = this.employeeList[0].contactNumber;
+    }else if(empCode == "NRG2"){
+      this.model.empCode = this.employeeList[1].empCode;
+      this.model.name = this.employeeList[1].name;
+      this.model.rank = this.employeeList[1].rank;
+      this.model.contactNumber = this.employeeList[1].contactNumber;
     }
-    else if(empCode == "emp03"){
-      this.model.empCode = "emp03";
-      this.model.name = "josni";
-      this.model.rank = "Director";
-      this.model.contactNumber = "223344";
+    else if(empCode == "NRG3"){
+      this.model.empCode = this.employeeList[2].empCode;
+      this.model.name = this.employeeList[2].name;
+      this.model.rank = this.employeeList[2].rank;
+      this.model.contactNumber = this.employeeList[2].contactNumber;
+    
     }
-    else if(empCode == "emp04"){
-      this.model.empCode = "emp04";
-      this.model.name = "employee 1";
-      this.model.rank = "Managing Director";
-      this.model.contactNumber = "121212";
-    }else if(empCode == "emp05"){
-      this.model.empCode = "emp05";
-      this.model.name = "employee 2";
-      this.model.rank = "Branch Manager";
-      this.model.contactNumber = "321321";
+    else if(empCode == "NRG4"){
+      this.model.empCode = this.employeeList[3].empCode;
+      this.model.name = this.employeeList[3].name;
+      this.model.rank = this.employeeList[3].rank;
+      this.model.contactNumber = this.employeeList[3].contactNumber;
+    
+    }else if(empCode == "NRG5"){
+      this.model.empCode = this.employeeList[4].empCode;
+      this.model.name = this.employeeList[4].name;
+      this.model.rank = this.employeeList[4].rank;
+      this.model.contactNumber = this.employeeList[4].contactNumber;
     }
-    else if(empCode == "emp06"){
-      this.model.empCode = "emp06";
-      this.model.name = "employee 3";
-      this.model.rank = "CEO";
-      this.model.contactNumber = "159951";
+    else if(empCode == "NRG6"){
+      this.model.empCode = this.employeeList[5].empCode;
+      this.model.name = this.employeeList[5].name;
+      this.model.rank = this.employeeList[5].rank;
+      this.model.contactNumber = this.employeeList[5].contactNumber;
+    }
+    else if(empCode == "NRG7"){
+      this.model.empCode = this.employeeList[6].empCode;
+      this.model.name = this.employeeList[6].name;
+      this.model.rank = this.employeeList[6].rank;
+      this.model.contactNumber = this.employeeList[6].contactNumber;
+    }
+    else if(empCode == "NRG8"){
+      this.model.empCode = this.employeeList[7].empCode;
+      this.model.name = this.employeeList[7].name;
+      this.model.rank = this.employeeList[7].rank;
+      this.model.contactNumber = this.employeeList[7].contactNumber;
+    }
+    else if(empCode == "NRG9"){
+      this.model.empCode = this.employeeList[8].empCode;
+      this.model.name = this.employeeList[8].name;
+      this.model.rank = this.employeeList[8].rank;
+      this.model.contactNumber = this.employeeList[8].contactNumber;
+    }
+    else if(empCode == "NRG10"){
+      this.model.empCode = this.employeeList[9].empCode;
+      this.model.name = this.employeeList[9].name;
+      this.model.rank = this.employeeList[9].rank;
+      this.model.contactNumber = this.employeeList[9].contactNumber;
+    }
+
+    else if(empCode == "NRG11"){
+      this.model.empCode = this.employeeList[10].empCode;
+      this.model.name = this.employeeList[10].name;
+      this.model.rank = this.employeeList[10].rank;
+      this.model.contactNumber = this.employeeList[10].contactNumber;
+    }
+    else if(empCode == "NRG12"){
+      this.model.empCode = this.employeeList[11].empCode;
+      this.model.name = this.employeeList[11].name;
+      this.model.rank = this.employeeList[11].rank;
+      this.model.contactNumber = this.employeeList[11].contactNumber;
     }
   }
 
