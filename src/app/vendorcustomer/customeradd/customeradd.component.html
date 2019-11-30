@@ -29,6 +29,7 @@
                                     
         <div id="hole-div">
                 <hr style="margin: 0px;">
+                <div id="curs-pointer">
                     <div *ngFor="let list of custList"  (click)="customerDetails(list.custcode)" id="{{ list.custcode }}">          
                         <h3 id="name-text">{{ list.name }}</h3>
                         <div class="row" id="details-text">
@@ -43,6 +44,7 @@
                         </div>
                          <hr style="margin: 0px;">
                      </div>
+                    </div>
             </div>
         </div>
             
