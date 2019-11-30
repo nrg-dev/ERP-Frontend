@@ -36,7 +36,7 @@
                                         
             <div id="hole-div">
                     <hr style="margin: 0px;">
-                        <div *ngFor="let list of vendorList"  (click)="vendorDetails(list.vendorcode)" id="{{ list.vendorcode }}">          
+                        <div *ngFor="let list of custList"  (click)="customerDetails(list.custcode)" id="{{ list.custcode }}">          
                             <h3 id="name-text">{{ list.name }}</h3>
                             <div class="row" id="details-text">
                                     <p id="country-text">country</p>
@@ -91,9 +91,9 @@
                     </div>
                     <div class="col-lg-7">
                         <div class="row" id="country">
-                            <p  id="text3">Vendor Code</p>
+                            <p  id="text3">Cusomer Code</p>
                             <p >:</p>
-                            <p >{{ this.model.vendorcode }}</p>
+                            <p >{{ this.model.custcode }}</p>
                         </div>
                         <div class="row" id="country">
                             <p  id="text3">Vendor Name</p>
