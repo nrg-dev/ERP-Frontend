@@ -29,6 +29,9 @@
     font-weight: 800;
     font-family: none;
 }
+.col-lg-9 {
+height: 192px;
+}
 .navbar{
     margin-bottom: 0px; 
     height: 100px;

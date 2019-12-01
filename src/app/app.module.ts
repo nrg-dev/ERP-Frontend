@@ -15,22 +15,25 @@ import { VendorcustomerModule } from './vendorcustomer/vendorcustomer.module';
 import { CategoryproductModule } from './categoryproduct/categoryproduct.module';
 import { PurchaseModule } from './purchase/purchase.module';
 import { FinanceModule } from './finance/finance.module';
-import { StockModule } from './stock/stock.module';
+import { StockModule } from './stock/stock.module'; 
 import { UsermgtModule } from './usermgt/usermgt.module';
 import { ReportModule } from './report/report.module';
 //import {MatTabsModule} from '@angular/material/tabs';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { AlertComponent } from './_directives/index';
+import { AlertService, AuthenticationService,UserService,ServerURL } from './_services/index';
 
 
 @NgModule({
   declarations: [
     AppComponent,
+    AlertComponent,
     LoginComponent,
     HeaderComponent,
     LeftmenuComponent,
     LandingpageComponent,    
     DashboardComponent
-  ],
+  ], 
   imports: [
     MDBBootstrapModule.forRoot(),
     BrowserModule,
@@ -48,12 +51,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     UsermgtModule
     
   ], 
-
-  //exports: [
-   // MatTabsModule,
-
-  //],
-  providers: [],
+ providers: [AlertService,AuthenticationService,UserService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

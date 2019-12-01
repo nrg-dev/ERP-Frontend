@@ -204,6 +204,9 @@ h3{
   background: #b30000; 
 } 
 
+a:hover {
+  background-color: #F3F3F3;
+}
 #hole-div{
   overflow-y: scroll;
   overflow-x: hidden;

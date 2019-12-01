@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { User } from '../_models/index';
 import { Router, ActivatedRoute } from '@angular/router';
+import { AlertService } from '../_services/index';
 
 @Component({
   selector: 'app-login',
@@ -13,7 +14,7 @@ export class LoginComponent implements OnInit {
   loading = false;
   passwordtype="password";
 
-  constructor(  private router: Router,) { }
+  constructor(  private router: Router, private alertService: AlertService) { }
 
   ngOnInit() {
     this.model.currentusername='';
@@ -21,10 +22,24 @@ export class LoginComponent implements OnInit {
   }
 
   onClickSubmit(){
+    this.alertService.clear();
+    let message="Invalid User Name !";
     console.log("user name : password"+this.model.currentusername+this.model.currentpassword);
-      localStorage.setItem('currentusername',this.model.currentusername);
-      localStorage.setItem('currentpassword',this.model.currentpassword);
+    localStorage.setItem('currentusername',this.model.currentusername);
+    localStorage.setItem('currentpassword',this.model.currentpassword);
+
+    if(this.model.currentusername!=="admin"){
+     // this.alertService.info(message);
+      this.alertService.warn(message);
+     // this.alertService.error(message);
+     // this.alertService.success(message);
+
+    }
+    else {
       this.router.navigate(['/landingpage']);
+
+    }
+
   }
 
   forgetPassword(){

@@ -71,6 +71,7 @@ export class VendoraddComponent implements OnInit {
     this.tempid=vendorcode;
     document.getElementById(this.tempid).style.backgroundColor='#DDEDF9';
 
+
     this.vendordetails = true;
     if(vendorcode == "VEN001"){
       this.model.vendorcode = this.vendorList[0].vendorcode;

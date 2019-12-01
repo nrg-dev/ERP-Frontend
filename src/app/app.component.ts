@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
-import { MemoryRouter } from 'react-router'
+//import { MemoryRouter } from 'react-router'
+import { Component, OnDestroy, OnInit } from '@angular/core';
+
 
 @Component({
   selector: 'app-root',
@@ -8,4 +9,5 @@ import { MemoryRouter } from 'react-router'
 })
 export class AppComponent {
   title = 'erp-ui';
+
 }
