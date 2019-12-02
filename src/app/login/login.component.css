@@ -573,5 +573,128 @@ height: 192px;
     }
    
 }
-
+@media (min-width: 1381px) and (max-width:2051px) {
+    #login-box{
+        height: 440px;
+        width: 500px;
+        background-color: gainsboro;
+        margin: auto;
+    }
+    #signin-button{
+        background-color:  #615f5f;
+        width: 110px;
+        border-radius: 0px;
+        margin-left: 68px;
+    }
+    #logo-img{
+        background-image: url('/assets/images/nrg_logo.png');
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: -60px;
+        width: 130px;
+        height: 124px;
+        display: block;
+    }
+    #typebox-with{
+        width: 285px;
+    }
+    #text{
+        text-align: center;
+        color:  #615f5f;
+    }
+   
+}
+@media (min-width:2052px) and (max-width:2732px){
+    #login-box{
+        height: 440px;
+        width: 500px;
+        background-color: gainsboro;
+        margin: auto;
+    }
+    #signin-button{
+        background-color:  #615f5f;
+        width: 110px;
+        border-radius: 0px;
+        margin-left: 68px;
+    }
+    #logo-img{
+        background-image: url('/assets/images/nrg_logo.png');
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: -60px;
+        width: 130px;
+        height: 124px;
+        display: block;
+    }
+    #typebox-with{
+        width: 285px;
+    }
+    #text{
+        text-align: center;
+        color:  #615f5f;
+    }
+   
+}
+@media (min-width:2733px) and (max-width:4102px){
+    #login-box{
+        height: 440px;
+        width: 500px;
+        background-color: gainsboro;
+        margin: auto;
+    }
+    #signin-button{
+        background-color:  #615f5f;
+        width: 110px;
+        border-radius: 0px;
+        margin-left: 68px;
+    }
+    #logo-img{
+        background-image: url('/assets/images/nrg_logo.png');
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: -60px;
+        width: 130px;
+        height: 124px;
+        display: block;
+    }
+    #typebox-with{
+        width: 285px;
+    }
+    #text{
+        text-align: center;
+        color:  #615f5f;
+    }
+   
+}
+@media (min-width:4103px) and (max-width:5464px){
+    #login-box{
+        height: 440px;
+        width: 500px;
+        background-color: gainsboro;
+        margin: auto;
+    }
+    #signin-button{
+        background-color:  #615f5f;
+        width: 110px;
+        border-radius: 0px;
+        margin-left: 68px;
+    }
+    #logo-img{
+        background-image: url('/assets/images/nrg_logo.png');
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: -60px;
+        width: 130px;
+        height: 124px;
+        display: block;
+    }
+    #typebox-with{
+        width: 285px;
+    }
+    #text{
+        text-align: center;
+        color:  #615f5f;
+    }
+   
+}
 

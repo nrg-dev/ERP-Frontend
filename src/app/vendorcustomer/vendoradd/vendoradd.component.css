@@ -1,3 +1,12 @@
+#purchase-div{
+  background: white;
+  margin : 0px 15px 30px 20px;
+  height: 530px;
+  color: white;
+  width: 100%;
+  border-radius: 10px;
+  /* border: 1px solid black; */
+}
 #vendor-style{
   border-bottom: 2px solid #007bff;
   color: #1664a7;
@@ -36,15 +45,7 @@
   border-bottom: 3px solid #007bff;
 }
 
-#purchase-div{
-  background: white;
-  margin : 0px 15px 30px 20px;
-  height: 530px;
-  color: white;
-  width: 100%;
-  border-radius: 10px;
-  /* border: 1px solid black; */
-}
+
 
 a {
   display: block;
@@ -243,9 +244,92 @@ a:hover {
 width: 150px;
 height: 130px;
 }
+#image-size{
+  width: 130;
+  margin-left: 50px;
+}
 #text3{
   font-size: 16px;
 }
 #curs-pointer{
   cursor: pointer;
 }
+@media (min-width: 768px) and (max-width: 810px) and (orientation: landscape) {
+  #purchase-div{
+    background: white;
+    margin : 0px 15px 30px 95px;
+    height: 530px;
+    color: white;
+    width: 100%;
+    border-radius: 10px;
+    /* border: 1px solid black; */
+  }
+  #vendor-style{
+    border-bottom: 2px solid #007bff;
+    color: #1664a7;
+    font-weight: bold;
+    margin-left: 65px;
+  }
+  .empdet-div{
+    background: white;
+    height: 530px;
+    border-radius: 10px;
+    margin-left: 60px;
+  }
+  #image-size{
+    width: 130;
+    margin-left: 0px;
+  }
+
+}
+@media (min-width: 810px) and (max-width: 1024px) and (orientation: landscape) {
+  #purchase-div{
+    background: white;
+    margin : 0px 15px 30px 95px;
+    height: 530px;
+    color: white;
+    width: 100%;
+    border-radius: 10px;
+    /* border: 1px solid black; */
+  }
+  #vendor-style{
+    border-bottom: 2px solid #007bff;
+    color: #1664a7;
+    font-weight: bold;
+    margin-left: 65px;
+  }
+  .empdet-div{
+    background: white;
+    height: 530px;
+    border-radius: 10px;
+    margin-left: 60px;
+  }
+  #image-size{
+    width: 130;
+    margin-left: 0px;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1280px){
+  #purchase-div{
+    background: white;
+    margin : 0px 15px 30px 45px;
+    height: 530px;
+    color: white;
+    width: 100%;
+    border-radius: 10px;
+    /* border: 1px solid black; */
+  }
+  #vendor-style{
+    border-bottom: 2px solid #007bff;
+    color: #1664a7;
+    font-weight: bold;
+    margin-left: 20px;
+  }
+  .empdet-div{
+    background: white;
+    height: 530px;
+    border-radius: 10px;
+    margin-left: 15px;
+  }
+}
+
